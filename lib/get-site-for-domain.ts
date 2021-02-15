@@ -1,3 +1,4 @@
+import { fontFamily } from 'site.config'
 import * as config from './config'
 import * as types from './types'
 
@@ -9,6 +10,7 @@ export const getSiteForDomain = async (
     name: config.name,
     rootNotionPageId: config.rootNotionPageId,
     rootNotionSpaceId: config.rootNotionSpaceId,
-    description: config.description
+    description: config.description,
+    fontFamily: config.fontFamily
   } as types.Site
 }

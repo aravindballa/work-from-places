@@ -3,6 +3,7 @@ import * as React from 'react'
 import * as types from '../lib/types'
 
 export const CustomFont: React.FC<{ site: types.Site }> = ({ site }) => {
+  console.log(site.fontFamily)
   if (!site.fontFamily) {
     return null
   }
@@ -25,7 +26,7 @@ export const CustomFont: React.FC<{ site: types.Site }> = ({ site }) => {
           .notion.notion-app {
             font-family: ${cssFontFamilies}, -apple-system, BlinkMacSystemFont,
               'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif,
-              'Segoe UI Emoji', 'Segoe UI Symbol';
+              'Segoe UI Emoji', 'Segoe UI Symbol' !important;
           }
         `}</style>
       </Head>

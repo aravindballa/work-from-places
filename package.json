@@ -11,6 +11,7 @@
   },
   "scripts": {
     "dev": "next dev",
+    "export": "next export",
     "build": "next build",
     "start": "next start",
     "deploy": "vercel --prod",
